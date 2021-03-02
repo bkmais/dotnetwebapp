@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerComposeProjectPath>docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>cf653bb4-3bc6-4fe2-b01e-ac1651e26605</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

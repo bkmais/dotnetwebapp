@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dotnetwebapp:
+    image: ${DOCKER_REGISTRY-}dotnetwebapp
+    build:
+      context: .
+      dockerfile: ./Dockerfile

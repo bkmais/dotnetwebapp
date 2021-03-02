@@ -1,0 +1,5 @@
+FROM mono:3.10-onbuild
+
+WORKDIR '/app'
+
+CMD ["mono", "./bin/dotnetWebapp.dll"]

@@ -1,0 +1,16 @@
+services:
+  dotnetwebapp:
+    build:
+      context: /Users/bankimchandramaisnam/Downloads/Software/Code/Docker/Dot-net-app/dotnetWebApp
+      dockerfile: ./Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: dotnetwebapp
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/bankimchandramaisnam/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/bankimchandramaisnam/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
